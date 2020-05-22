@@ -1,1 +1,63 @@
-/* Styles */
+:root {
+  --main-pink: #d35266;
+  --light-grey: #f3f3f3;
+  --grey: #888;
+  --dark-grey: #383838;
+  --white: #fff;
+  --primary-font: "HelveticaNeue";
+  --secondary-font: "Gotham";
+}
+
+html {
+  font-family: var(--primary-font);
+}
+
+.padded {
+  padding: 15px;
+}
+
+.m-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  background-color: var(--light-grey);
+}
+
+.wrapper {
+  max-width: 1310px;
+  width: 100%;
+}
+
+.nav {
+  margin-bottom: -15px;
+  position: sticky;
+  top: 0;
+  background-color: var(--dark-grey);
+  min-height: 50px;
+}
+
+.header {
+  background-color: var(--main-pink);
+  min-height: 400px;
+}
+
+.main {
+  /* background-color: ; */
+}
+
+.ads {
+  background-color: brown;
+  min-height: 360px;
+}
+
+.section {
+  background-color: cadetblue;
+  min-height: 360px;
+}
+
+.footer {
+  background-color: chocolate;
+  min-height: 256px;
+}
