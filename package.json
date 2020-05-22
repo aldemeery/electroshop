@@ -1,0 +1,37 @@
+{
+    "name": "electroshop",
+    "version": "1.0.0",
+    "description": "Electronics online shop.",
+    "main": "index.js",
+    "scripts": {
+        "lint": "stylelint ./assets/**/*.css -s css",
+        "lint:fix": "stylelint ./assets/**/*.css -s css --fix",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "pre-commit": [
+        "lint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aldemeery/electroshop.git"
+    },
+    "keywords": [
+        "electronic",
+        "shop",
+        "microverse",
+        "html",
+        "css",
+        "template"
+    ],
+    "author": "Osama Aldemeery <aldemeery@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/aldemeery/electroshop/issues"
+    },
+    "homepage": "https://github.com/aldemeery/electroshop#readme",
+    "devDependencies": {
+        "pre-commit": "^1.2.2",
+        "stylelint": "^13.3.3",
+        "stylelint-config-recommended": "^3.0.0"
+    }
+}
