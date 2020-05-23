@@ -21,12 +21,27 @@ html {
   margin-left: auto;
 }
 
+.list-inline {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 .container-fluid {
   background-color: var(--light-grey);
 }
 
 .wrapper {
-  max-width: 1310px;
+  max-width: 1024px;
   width: 100%;
 }
 
@@ -38,13 +53,67 @@ html {
   min-height: 50px;
 }
 
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1310px;
+}
+
+.nav-item {
+  /* Silence is golden. */
+}
+
+.nav-item a {
+  color: var(--grey);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: var(--main-pink);
+}
+
+.nav-item .active {
+  color: var(--main-pink);
+}
+
+.logo {
+  max-width: 25px;
+}
+
+.logo-text {
+  color: var(--white);
+}
+
+.logo-text:hover {
+  color: var(--main-pink);
+}
+
+.nav-item-icon,
+.nav-item-text {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.btn {
+  background-color: var(--main-pink);
+  color: white !important;
+  padding: 10px 20px;
+}
+
+.post-an-ad {
+  display: none !important;
+}
+
 .header {
   background-color: var(--main-pink);
   min-height: 400px;
 }
 
 .main {
-  /* background-color: ; */
+  /* Silence is golden. */
 }
 
 .ads {
@@ -60,4 +129,34 @@ html {
 .footer {
   background-color: chocolate;
   min-height: 256px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .nav-item-icon,
+  .nav-item-text {
+    font-size: 13px;
+  }
+
+  .post-an-ad {
+    display: inline-block !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .nav-item-icon,
+  .nav-item-text {
+    font-size: 15px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Silence is golden. */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Silence is golden. */
 }
