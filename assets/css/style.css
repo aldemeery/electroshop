@@ -46,6 +46,7 @@ html {
 }
 
 .nav {
+  z-index: 1;
   margin-bottom: -15px;
   position: sticky;
   top: 0;
@@ -101,6 +102,7 @@ html {
   background-color: var(--main-pink);
   color: white !important;
   padding: 10px 20px;
+  border: none;
 }
 
 .post-an-ad {
@@ -114,6 +116,51 @@ html {
 
 .main {
   /* Silence is golden. */
+}
+
+.header-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.info {
+  color: var(--white);
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80px;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+.slogan {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.btn-dark {
+  background-color: var(--dark-grey);
+}
+
+.search-form {
+  position: absolute;
+  top: 200px;
+}
+
+.search-form input,
+.search-form select {
+  display: block;
+  margin: 5px auto;
+  padding: 10px;
+  border: none;
+}
+
+.search-form button {
+  display: block;
+  margin: 5px auto;
 }
 
 .ads {
@@ -140,6 +187,17 @@ html {
 
   .post-an-ad {
     display: inline-block !important;
+  }
+
+  .search-form input,
+  .search-form select {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .search-form button {
+    display: inline-block;
+    margin: 0 0 0 15px;
   }
 }
 
