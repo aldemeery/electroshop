@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic layout.
 - Navbar styles across all screens.
 - Header styles across all screens.
+- Ads section styles across all screens.

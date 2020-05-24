@@ -1,4 +1,5 @@
 :root {
+  --dark-pink: #b14555;
   --main-pink: #d35266;
   --light-grey: #f3f3f3;
   --grey: #888;
@@ -103,6 +104,7 @@ html {
   color: white !important;
   padding: 10px 20px;
   border: none;
+  text-decoration: none;
 }
 
 .post-an-ad {
@@ -164,8 +166,50 @@ html {
 }
 
 .ads {
-  background-color: brown;
-  min-height: 360px;
+  background-color: var(--white);
+}
+
+.ads-body p {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn-group {
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn-group > *:hover {
+  background-color: var(--dark-pink);
+}
+
+.btn-group > *:not(:last-child) {
+  border-right: 1px solid var(--dark-pink);
+}
+
+.btn-group > *:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btn-group > *:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.section-title {
+  font-weight: 300;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.item-name {
+  text-decoration: none;
+  color: var(--main-pink);
+  font-weight: 500;
 }
 
 .section {
