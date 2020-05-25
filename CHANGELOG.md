@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Header styles across all screens.
 - Ads section styles across all screens.
 - Items sections styles across all screens.
+- Footer styles across all screens.

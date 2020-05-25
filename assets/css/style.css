@@ -69,13 +69,14 @@ html {
   max-width: 1310px;
 }
 
-.nav-item {
-  /* Silence is golden. */
-}
-
 .nav-item a {
   color: var(--grey);
   font-family: var(--secondary-font);
+  text-decoration: none;
+}
+
+.menu-item a {
+  color: var(--grey);
   text-decoration: none;
 }
 
@@ -287,8 +288,82 @@ html {
 }
 
 .footer {
-  background-color: chocolate;
-  min-height: 256px;
+  background-color: var(--white);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.intro {
+  color: var(--grey);
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  vertical-align: middle;
+  display: inline-block;
+  width: 40px;
+}
+
+.about .name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.menu-title {
+  color: var(--main-pink);
+  border-bottom: 1px solid var(--main-pink);
+  text-transform: uppercase;
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.menu-item {
+  margin-top: 5px;
+}
+
+.menu-item a:hover {
+  color: var(--dark-grey);
+  text-decoration: underline;
+}
+
+.upper-footer > div {
+  padding: 5px 20px;
+  margin-bottom: 15px;
+}
+
+.lower-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  font-size: 1.6em;
+  cursor: pointer;
+  color: var(--grey);
+}
+
+.social-icons i:hover {
+  color: var(--dark-grey);
+}
+
+.about-info {
+  max-width: 300px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
