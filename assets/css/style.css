@@ -80,6 +80,16 @@ html {
   text-decoration: none;
 }
 
+.pagination a {
+  color: black;
+  padding: 4px 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
 .nav-item a:hover {
   color: var(--main-pink);
 }
@@ -243,6 +253,27 @@ html {
   margin-bottom: 10px;
 }
 
+.menu-item a:hover {
+  color: var(--dark-grey);
+  text-decoration: underline;
+}
+
+.pagination {
+  display: inline-flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.pagination a.active {
+  background-color: var(--main-pink);
+  color: white;
+  border: 1px solid var(--main-pink);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
 .btn-group {
   display: flex;
   align-items: flex-end;
@@ -383,11 +414,6 @@ html {
 
 .menu-item {
   margin-top: 5px;
-}
-
-.menu-item a:hover {
-  color: var(--dark-grey);
-  text-decoration: underline;
 }
 
 .upper-footer > div {

@@ -16,3 +16,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Items sections styles across all screens.
 - Footer styles across all screens.
 - Search results styles across all screens.
+- Pagination links styles across all screens.
