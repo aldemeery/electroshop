@@ -1,10 +1,15 @@
-# Apple
+# Electroshop
 
-> A clone for the apple website.
+> Online shop HTML template.
 
-## Screenshot
+---
 
-![screenshot](./assets/images/screenshot.png)
+> This HTML template is based on the [design](https://www.behance.net/gallery/24796463/ZATTIX) by [Mohammed Awad](https://www.behance.net/M_Awad) from Behance
+
+## Screenshots
+
+![screenshot](./assets/images/home_screenshot.png)
+![screenshot](./assets/images/search_screenshot.png)
 
 ## Live Preview
 
