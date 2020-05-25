@@ -22,6 +22,14 @@ html {
   margin-left: auto;
 }
 
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
 .list-inline {
   display: flex;
   align-items: center;
@@ -150,6 +158,12 @@ html {
 .search-form {
   position: absolute;
   top: 200px;
+  width: 100%;
+}
+
+.form-inline {
+  display: flex;
+  flex-direction: column;
 }
 
 .search-form input,
@@ -158,11 +172,14 @@ html {
   margin: 5px auto;
   padding: 10px;
   border: none;
+  flex: 1 1 100%;
 }
 
 .search-form button {
   display: block;
   margin: 5px auto;
+  min-width: 128px;
+  cursor: pointer;
 }
 
 .ads {
@@ -206,15 +223,67 @@ html {
   text-transform: uppercase;
 }
 
+.item {
+  background-color: var(--white);
+  border: 1px solid #ddd;
+}
+
+.item-body {
+  padding-top: 0;
+}
+
 .item-name {
   text-decoration: none;
   color: var(--main-pink);
   font-weight: 500;
 }
 
-.section {
-  background-color: cadetblue;
-  min-height: 360px;
+.item .item-name {
+  color: var(--dark-grey);
+  font-weight: bold;
+}
+
+.from {
+  color: var(--grey);
+  font-weight: 300;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  /* display: inline-block; */
+}
+
+.add-to-cart {
+  color: var(--grey);
+}
+
+.from,
+.actions {
+  margin-top: 15px;
+}
+
+.add-to-cart:hover {
+  color: var(--main-pink);
+}
+
+.pink {
+  color: var(--main-pink);
+}
+
+.item .item-name:hover {
+  text-decoration: underline;
+}
+
+.main-section-title {
+  color: var(--grey);
+}
+
+.hr {
+  border: 0.4px solid var(--grey);
 }
 
 .footer {
@@ -224,6 +293,11 @@ html {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .form-inline {
+    display: flex;
+    flex-direction: row;
+  }
+
   .nav-item-icon,
   .nav-item-text {
     font-size: 13px;
@@ -236,7 +310,7 @@ html {
   .search-form input,
   .search-form select {
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 5px 0 auto;
   }
 
   .search-form button {
