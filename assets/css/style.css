@@ -162,6 +162,10 @@ html {
   vertical-align: middle;
 }
 
+.item-img {
+  padding: 20px;
+}
+
 .custom {
   max-width: 40px;
   border-radius: 3px;

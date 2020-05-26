@@ -1,6 +1,6 @@
 # Electroshop
 
-> Online shop HTML template.
+> Online smart watches shop HTML template.
 
 ---
 

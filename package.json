@@ -1,7 +1,7 @@
 {
     "name": "electroshop",
     "version": "1.0.0",
-    "description": "Electronics online shop.",
+    "description": "Smart watches online shop.",
     "main": "index.js",
     "scripts": {
         "lint": "stylelint ./assets/**/*.css -s css",
