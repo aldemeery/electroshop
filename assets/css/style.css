@@ -157,11 +157,19 @@ html {
   margin: 10px auto;
 }
 
+.has-custom {
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
 .custom {
   max-width: 40px;
   border-radius: 3px;
   border: 1px solid var(--grey);
   padding: 0 3px;
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .inline {
@@ -331,10 +339,6 @@ html {
 .actions {
   display: flex;
   justify-content: space-between;
-}
-
-.price {
-  /* display: inline-block; */
 }
 
 .add-to-cart {
